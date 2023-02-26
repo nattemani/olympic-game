@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row class="banner light-bg d-flex align-center justify-center">
+    <v-row class="banner d-flex align-center justify-center">
       <v-img
         max-height="200"
         contain
@@ -23,14 +23,41 @@
               position: relative;
             "
           >
-            <div class="circle blue__circle" @click="activeChapter = 'blue'">
-              <v-card-title class="blue__text">Chapitre 1</v-card-title>
+            <div
+              class="circle blue__circle"
+              :class="blueChapterActive ? 'active_blue__circle' : null"
+              @click="
+                activeChapter = 'blue'
+                blueChapterActive = true
+              "
+            >
+              <v-card-title v-if="!blueChapterActive" class="blue__text"
+                >Chapitre 1</v-card-title
+              >
             </div>
-            <div class="circle black__circle" @click="activeChapter = 'black'">
-              <v-card-title class="black__text">Chapitre 2</v-card-title>
+            <div
+              class="circle black__circle"
+              :class="blackChapterActive ? 'active_black__circle' : null"
+              @click="
+                activeChapter = 'black'
+                blackChapterActive = true
+              "
+            >
+              <v-card-title v-if="!blackChapterActive" class="black__text"
+                >Chapitre 2</v-card-title
+              >
             </div>
-            <div class="circle red__circle" @click="activeChapter = 'red'">
-              <v-card-title class="red__text">Chapitre 3</v-card-title>
+            <div
+              class="circle red__circle"
+              :class="redChapterActive ? 'active_red__circle' : null"
+              @click="
+                activeChapter = 'red'
+                redChapterActive = true
+              "
+            >
+              <v-card-title v-if="!redChapterActive" class="red__text"
+                >Chapitre 3</v-card-title
+              >
             </div>
           </v-col>
           <v-col
@@ -44,12 +71,27 @@
           >
             <div
               class="circle yellow__circle"
-              @click="activeChapter = 'yellow'"
+              :class="yellowChapterActive ? 'active_yellow__circle' : null"
+              @click="
+                activeChapter = 'yellow'
+                yellowChapterActive = true
+              "
             >
-              <v-card-title class="yellow__text">Chapitre 4</v-card-title>
+              <v-card-title v-if="!yellowChapterActive" class="yellow__text"
+                >Chapitre 4</v-card-title
+              >
             </div>
-            <div class="circle green__circle" @click="activeChapter = 'green'">
-              <v-card-title class="green__text">Chapitre 5</v-card-title>
+            <div
+              class="circle green__circle"
+              :class="greenChapterActive ? 'active_green__circle' : null"
+              @click="
+                activeChapter = 'green'
+                greenChapterActive = true
+              "
+            >
+              <v-card-title v-if="!greenChapterActive" class="green__text"
+                >Chapitre 5</v-card-title
+              >
             </div>
           </v-col>
         </v-col>
@@ -131,7 +173,12 @@
 export default {
   data() {
     return {
-      activeChapter: ''
+      activeChapter: '',
+      blueChapterActive: false,
+      redChapterActive: false,
+      greenChapterActive: false,
+      yellowChapterActive: false,
+      blackChapterActive: false
     }
   },
   computed: {
@@ -158,7 +205,9 @@ export default {
   height: 500px;
   display: flex;
   justify-content: center;
+  background-image: url(~/assets/banner-bg.jpg);
   align-items: center;
+  background-size: cover;
 }
 
 .banner2 {
@@ -174,7 +223,7 @@ export default {
 }
 
 .grey-bg {
-  background-color: lightgray;
+  background-color: white;
 }
 
 .circle {
@@ -189,17 +238,21 @@ export default {
 }
 
 .black__circle {
-  background-color: black;
+  background-color: #1e1e1e;
 }
 .black__bg {
-  background-color: black;
+  background-color: #1e1e1e;
 }
 .black__circle:hover {
   background: white;
-  border: solid 5px black;
+  border: solid 10px #1e1e1e;
+}
+.active_black__circle {
+  background: white;
+  border: solid 10px #1e1e1e;
 }
 .black__text {
-  color: black;
+  color: #1e1e1e;
 }
 
 .yellow__circle {
@@ -210,7 +263,11 @@ export default {
 }
 .yellow__circle:hover {
   background: white;
-  border: solid 5px #f4b33d;
+  border: solid 10px #f4b33d;
+}
+.active_yellow__circle {
+  background: white;
+  border: solid 10px #f4b33d;
 }
 .yellow__text {
   color: #f4b33d;
@@ -225,7 +282,12 @@ export default {
 
 .blue__circle:hover {
   background: white;
-  border: solid 5px #0083c8;
+  border: solid 10px #0083c8;
+}
+
+.active_blue__circle {
+  background: white;
+  border: solid 10px #0083c8;
 }
 
 .blue__text {
@@ -233,7 +295,7 @@ export default {
 }
 
 .white__circle {
-  border: solid 5px white;
+  border: solid 10px white;
   background-color: transparent;
 }
 .white__circle:hover {
@@ -254,7 +316,11 @@ export default {
 
 .red__circle:hover {
   background: white;
-  border: solid 5px #e9354e;
+  border: solid 10px #e9354e;
+}
+.active_red__circle {
+  background: white;
+  border: solid 10px #e9354e;
 }
 .red__text {
   color: #e9354e;
@@ -270,7 +336,11 @@ export default {
 
 .green__circle:hover {
   background: white;
-  border: solid 5px #00a851;
+  border: solid 10px #00a851;
+}
+.active_green__circle {
+  background: white;
+  border: solid 10px #00a851;
 }
 .green__text {
   color: #00a851;
