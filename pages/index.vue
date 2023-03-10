@@ -1,5 +1,10 @@
 <template>
-  <div>
+  <div class="bannerbg-2 font-style">
+    <v-overlay v-model="overlayMobile" z-index="99999999" opacity="1">
+      Ce site n'es pas dispo sur mobile,<br />
+      Venez nous découvrir sur un ordinateur !
+    </v-overlay>
+
     <v-row class="banner d-flex align-center justify-center">
       <v-img
         max-height="200"
@@ -11,7 +16,7 @@
       <v-row
         v-if="activeChapter === ''"
         key="1"
-        class="banner2 grey-bg d-flex align-center justify-center"
+        class="banner2 d-flex align-center justify-center"
         style="padding: 25px"
       >
         <v-col>
@@ -194,6 +199,15 @@ export default {
       } else {
         return 'black__bg'
       }
+    },
+    overlayMobile() {
+      if (this.$device.isMobile) {
+        console.log('true')
+        return true
+      } else {
+        console.log('false')
+        return false
+      }
     }
   },
   methods: {}
@@ -205,9 +219,18 @@ export default {
   height: 500px;
   display: flex;
   justify-content: center;
-  background-image: url(~/assets/banner-bg.jpg);
+  /* background-image: url(~/assets/banner-bg2.jpg); */
   align-items: center;
   background-size: cover;
+}
+.bannerbg-2 {
+  background-image: url(~/assets/banner-bg2.jpg);
+
+  background-size: cover;
+}
+
+.font-style {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .banner2 {
@@ -220,10 +243,6 @@ export default {
 
 .light-bg {
   background-color: lightgoldenrodyellow;
-}
-
-.grey-bg {
-  background-color: white;
 }
 
 .circle {
