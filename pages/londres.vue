@@ -9,7 +9,7 @@
       <v-img
         max-height="300"
         contain
-        :src="require('~/assets/logo-paris.png')"
+        :src="require('~/assets/logo-londres.png')"
       ></v-img>
     </v-row>
     <transition name="fade" mode="out-in">
@@ -178,9 +178,9 @@
         large
         class="next-btn"
         style="margin-top: 25px; font-size: 1.25rem; font-weight: bold"
-        @click="$router.push('londres')"
+        @click="$router.push('tokyo')"
       >
-        LONDRES
+        TOKYO
         <v-icon style="padding-left: 5px">
           mdi-arrow-right-bold-circle-outline
         </v-icon>
