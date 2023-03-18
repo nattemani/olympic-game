@@ -1,211 +1,150 @@
 <template>
-  <div class="bannerbg-2 font-style">
+  <div class="bannerbg-3 font-style">
     <v-overlay v-model="overlayMobile" z-index="99999999" opacity="1">
       Ce site n'es pas dispo sur mobile,<br />
       Venez nous découvrir sur un ordinateur !
     </v-overlay>
-
-    <v-row class="banner d-flex align-center justify-center">
-      <v-img
-        max-height="200"
-        contain
-        :src="require('~/assets/logo.png')"
-      ></v-img>
+    <v-row class="banner-intro">
+      <v-col
+        cols="12"
+        style="display: flex; align-items: center; justify-content: center"
+      >
+        <v-card
+          style="
+            background-color: #b4c3c3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          "
+          flat
+          height="450"
+        >
+          <v-card-title class="intro-title"> INTRO TITRE </v-card-title>
+          <v-card-text class="intro-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            sagittis porta elit a ornare. Praesent suscipit, nibh sed iaculis
+            convallis, nunc nunc eleifend odio, ut pellentesque mauris ipsum non
+            lectus. Suspendisse ac pretium diam. Sed pharetra mi id sapien
+            faucibus imperdiet. Donec imperdiet pharetra mauris at feugiat.
+            Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in
+            nunc accumsan cursus ac aliquam magna. Vestibulum ante ipsum primis
+            in faucibus orci luctus et ultrices posuere cubilia curae; Mauris
+            imperdiet volutpat dolor eget eleifend. Nulla faucibus pellentesque
+            neque sed tincidunt. In id velit at odio consectetur laoreet. Donec
+            a odio ac tellus lobortis elementum. In eget luctus quam. Donec a
+            ultrices lacus. Vestibulum a nisi quis dui ultricies maximus. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit.</v-card-text
+          >
+        </v-card>
+      </v-col>
+      <v-col cols="10" style="display: flex">
+        <v-col>
+          <v-card height="200" style="position: relative">
+            <v-container>
+              <v-row>
+                <v-col cols="8">
+                  <v-card-title style="font-weight: bold"> PARIS </v-card-title>
+                  <v-card-text>
+                    In eget luctus quam. Donec a ultrices lacus. Vestibulum a
+                    nisi quis dui ultricies maximus.
+                  </v-card-text>
+                </v-col>
+                <v-col>
+                  <v-avatar
+                    style="position: absolute; top: 20px; right: 20px"
+                    size="70"
+                  >
+                    <v-img :src="require(`~/assets/paris-avatar.jpeg`)">
+                    </v-img>
+                  </v-avatar>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card height="200" style="position: relative">
+            <v-container>
+              <v-row>
+                <v-col cols="8">
+                  <v-card-title style="font-weight: bold">
+                    LONDRES
+                  </v-card-title>
+                  <v-card-text>
+                    In eget luctus quam. Donec a ultrices lacus. Vestibulum a
+                    nisi quis dui ultricies maximus.
+                  </v-card-text>
+                </v-col>
+                <v-col>
+                  <v-avatar
+                    style="position: absolute; top: 20px; right: 20px"
+                    size="70"
+                  >
+                    <v-img :src="require(`~/assets/london-avatar.jpg`)">
+                    </v-img>
+                  </v-avatar>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-card>
+        </v-col>
+        <v-col>
+          <v-card height="200" style="position: relative">
+            <v-container>
+              <v-row>
+                <v-col cols="8">
+                  <v-card-title style="font-weight: bold"> TOKYO </v-card-title>
+                  <v-card-text>
+                    In eget luctus quam. Donec a ultrices lacus. Vestibulum a
+                    nisi quis dui ultricies maximus.
+                  </v-card-text>
+                </v-col>
+                <v-col>
+                  <v-avatar
+                    style="position: absolute; top: 20px; right: 20px"
+                    size="70"
+                  >
+                    <v-img :src="require(`~/assets/tokyo-avatar.jpg`)"> </v-img>
+                  </v-avatar>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-card>
+        </v-col>
+      </v-col>
+      <v-col cols="8" style="margin: 10px 0px 10px 0px">
+        <v-btn
+          block
+          large
+          style="font-weight: bold"
+          class="start-btn"
+          @click="$router.push('/paris')"
+        >
+          COMMENCER
+        </v-btn>
+      </v-col>
     </v-row>
-    <transition name="fade" mode="out-in">
-      <v-row
-        v-if="activeChapter === ''"
-        key="1"
-        class="banner2 d-flex align-center justify-center"
-        style="padding: 25px"
-      >
-        <v-col>
-          <v-col
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              position: relative;
-            "
-          >
-            <div
-              class="circle blue__circle"
-              :class="blueChapterActive ? 'active_blue__circle' : null"
-              @click="
-                activeChapter = 'blue'
-                blueChapterActive = true
-              "
-            >
-              <v-card-title v-if="!blueChapterActive" class="blue__text"
-                >Chapitre 1</v-card-title
-              >
-            </div>
-            <div
-              class="circle black__circle"
-              :class="blackChapterActive ? 'active_black__circle' : null"
-              @click="
-                activeChapter = 'black'
-                blackChapterActive = true
-              "
-            >
-              <v-card-title v-if="!blackChapterActive" class="black__text"
-                >Chapitre 2</v-card-title
-              >
-            </div>
-            <div
-              class="circle red__circle"
-              :class="redChapterActive ? 'active_red__circle' : null"
-              @click="
-                activeChapter = 'red'
-                redChapterActive = true
-              "
-            >
-              <v-card-title v-if="!redChapterActive" class="red__text"
-                >Chapitre 3</v-card-title
-              >
-            </div>
-          </v-col>
-          <v-col
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              bottom: 150px;
-              position: absolute;
-            "
-          >
-            <div
-              class="circle yellow__circle"
-              :class="yellowChapterActive ? 'active_yellow__circle' : null"
-              @click="
-                activeChapter = 'yellow'
-                yellowChapterActive = true
-              "
-            >
-              <v-card-title v-if="!yellowChapterActive" class="yellow__text"
-                >Chapitre 4</v-card-title
-              >
-            </div>
-            <div
-              class="circle green__circle"
-              :class="greenChapterActive ? 'active_green__circle' : null"
-              @click="
-                activeChapter = 'green'
-                greenChapterActive = true
-              "
-            >
-              <v-card-title v-if="!greenChapterActive" class="green__text"
-                >Chapitre 5</v-card-title
-              >
-            </div>
-          </v-col>
-        </v-col>
-      </v-row>
-      <v-row
-        v-else
-        key="2"
-        class="banner2"
-        style="padding: 25px"
-        :class="activeChapterStyle"
-      >
-        <v-col>
-          <v-col
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              position: relative;
-            "
-          >
-            <div
-              class="circle white__circle"
-              :style="activeChapter === 'blue' ? '' : 'opacity: 0'"
-              @click="activeChapter === 'blue' ? (activeChapter = '') : null"
-            >
-              <v-card-title class="white__text">Chapitre 1</v-card-title>
-            </div>
-            <div
-              class="circle white__circle"
-              :style="activeChapter === 'black' ? '' : 'opacity: 0'"
-              @click="activeChapter === 'black' ? (activeChapter = '') : null"
-            >
-              <v-card-title class="white__text">Chapitre 2</v-card-title>
-            </div>
-            <div
-              class="circle white__circle"
-              :style="activeChapter === 'red' ? '' : 'opacity: 0'"
-              @click="activeChapter === 'red' ? (activeChapter = '') : null"
-            >
-              <v-card-title class="white__text">Chapitre 3</v-card-title>
-            </div>
-          </v-col>
-          <v-col
-            style="
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              bottom: 150px;
-              position: absolute;
-            "
-          >
-            <div
-              class="circle white__circle"
-              :style="activeChapter === 'yellow' ? '' : 'opacity: 0'"
-              @click="activeChapter === 'yellow' ? (activeChapter = '') : null"
-            >
-              <v-card-title class="white__text">Chapitre 4</v-card-title>
-            </div>
-            <div
-              class="circle white__circle"
-              :style="activeChapter === 'green' ? '' : 'opacity: 0'"
-              @click="activeChapter === 'green' ? (activeChapter = '') : null"
-            >
-              <v-card-title class="white__text">Chapitre 5</v-card-title>
-            </div>
-          </v-col>
-        </v-col>
-      </v-row>
-    </transition>
+
     <v-row style="display: flex; justify-content: center; align-items: center">
-      <v-card-title style="font-size: 2em; font-weight: bold"
-        >PARIS 2024</v-card-title
+      <v-card
+        flat
+        style="display: flex; flex-direction: column; align-items: center"
       >
+        <v-card-title> Réalisé par : </v-card-title>
+        <v-card-subtitle> Fatoumagrande, et des gens...</v-card-subtitle>
+      </v-card>
     </v-row>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      activeChapter: '',
-      blueChapterActive: false,
-      redChapterActive: false,
-      greenChapterActive: false,
-      yellowChapterActive: false,
-      blackChapterActive: false
-    }
-  },
   computed: {
-    activeChapterStyle() {
-      if (this.activeChapter === 'blue') {
-        return 'blue__bg'
-      } else if (this.activeChapter === 'red') {
-        return 'red__bg'
-      } else if (this.activeChapter === 'green') {
-        return 'green__bg'
-      } else if (this.activeChapter === 'yellow') {
-        return 'yellow__bg'
-      } else {
-        return 'black__bg'
-      }
-    },
     overlayMobile() {
       if (this.$device.isMobile) {
-        console.log('true')
         return true
       } else {
-        console.log('false')
         return false
       }
     }
@@ -215,17 +154,49 @@ export default {
 </script>
 
 <style>
+.start-btn {
+  background-color: #50c965 !important;
+  color: white !important;
+}
+
+.intro-title {
+  font-size: 2em;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.intro-text {
+  width: 80%;
+  font-size: 1.25em;
+  margin-top: 50px;
+}
 .banner {
-  height: 500px;
   display: flex;
   justify-content: center;
   /* background-image: url(~/assets/banner-bg2.jpg); */
   align-items: center;
   background-size: cover;
 }
+
+.banner-intro {
+  display: flex;
+  justify-content: center;
+  /* background-image: url(~/assets/banner-bg2.jpg); */
+  margin-top: 100px;
+  align-items: center;
+  height: fit-content;
+  background-color: #b4c3c3;
+}
 .bannerbg-2 {
   background-image: url(~/assets/banner-bg2.jpg);
-
+}
+.bannerbg-3 {
+  background-image: url(~/assets/banner-bg2.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   background-size: cover;
 }
 
