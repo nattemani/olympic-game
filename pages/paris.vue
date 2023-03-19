@@ -4,6 +4,22 @@
       Ce site n'es pas dispo sur mobile,<br />
       Venez nous découvrir sur un ordinateur !
     </v-overlay>
+    <v-btn
+      style="
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 1.05rem;
+        font-weight: bold;
+      "
+      class="back-btn"
+      @click="$router.push('/tokyo')"
+    >
+      <v-icon style="padding-right: 5px">
+        mdi-arrow-left-bold-circle-outline
+      </v-icon>
+      RETOUR
+    </v-btn>
 
     <v-row class="banner d-flex align-center justify-center">
       <v-img
@@ -206,6 +222,7 @@
         large
         class="next-btn"
         style="margin-top: 25px; font-size: 1.25rem; font-weight: bold"
+        @click="$router.push('/end')"
       >
         CONCLUSION
         <v-icon style="padding-left: 5px">
@@ -311,6 +328,10 @@ export default {
 <style>
 .next-btn {
   background-color: #50c965 !important;
+  color: white !important;
+}
+.back-btn {
+  background-color: #c95050 !important;
   color: white !important;
 }
 .banner {

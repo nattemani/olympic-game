@@ -20,9 +20,7 @@
           flat
           height="450"
         >
-          <v-card-title class="intro-title">
-            La gouvernance financière et budgétaire des Jeux Olympiques
-          </v-card-title>
+          <v-card-title class="intro-title"> CONCLUSION </v-card-title>
           <v-card-text class="intro-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
             sagittis porta elit a ornare. Praesent suscipit, nibh sed iaculis
@@ -39,89 +37,6 @@
             ipsum dolor sit amet, consectetur adipiscing elit.</v-card-text
           >
         </v-card>
-      </v-col>
-      <v-col cols="10" style="display: flex">
-        <v-col>
-          <v-card height="200" style="position: relative">
-            <v-container>
-              <v-row>
-                <v-col cols="8">
-                  <v-card-title style="font-weight: bold"> RIO </v-card-title>
-                  <v-card-text>
-                    In eget luctus quam. Donec a ultrices lacus. Vestibulum a
-                    nisi quis dui ultricies maximus.
-                  </v-card-text>
-                </v-col>
-                <v-col>
-                  <v-avatar
-                    style="position: absolute; top: 20px; right: 20px"
-                    size="70"
-                  >
-                    <v-img :src="require(`~/assets/rio-avatar.jpg`)"> </v-img>
-                  </v-avatar>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
-        </v-col>
-        <v-col>
-          <v-card height="200" style="position: relative">
-            <v-container>
-              <v-row>
-                <v-col cols="8">
-                  <v-card-title style="font-weight: bold"> TOKYO </v-card-title>
-                  <v-card-text>
-                    In eget luctus quam. Donec a ultrices lacus. Vestibulum a
-                    nisi quis dui ultricies maximus.
-                  </v-card-text>
-                </v-col>
-                <v-col>
-                  <v-avatar
-                    style="position: absolute; top: 20px; right: 20px"
-                    size="70"
-                  >
-                    <v-img :src="require(`~/assets/tokyo-avatar.jpg`)"> </v-img>
-                  </v-avatar>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
-        </v-col>
-        <v-col>
-          <v-card height="200" style="position: relative">
-            <v-container>
-              <v-row>
-                <v-col cols="8">
-                  <v-card-title style="font-weight: bold"> PARIS </v-card-title>
-                  <v-card-text>
-                    In eget luctus quam. Donec a ultrices lacus. Vestibulum a
-                    nisi quis dui ultricies maximus.
-                  </v-card-text>
-                </v-col>
-                <v-col>
-                  <v-avatar
-                    style="position: absolute; top: 20px; right: 20px"
-                    size="70"
-                  >
-                    <v-img :src="require(`~/assets/paris-avatar.jpeg`)">
-                    </v-img>
-                  </v-avatar>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
-        </v-col>
-      </v-col>
-      <v-col cols="8" style="margin: 10px 0px 10px 0px">
-        <v-btn
-          block
-          large
-          style="font-weight: bold"
-          class="start-btn"
-          @click="$router.push('/rio')"
-        >
-          COMMENCER
-        </v-btn>
       </v-col>
     </v-row>
 
