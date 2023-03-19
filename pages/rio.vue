@@ -122,9 +122,22 @@
         v-else
         key="2"
         class="banner2"
-        style="padding: 25px"
+        style="padding: 25px; position: relative"
         :class="activeChapterStyle"
       >
+        <v-btn
+          icon
+          style="
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            z-index: 99999999;
+            color: white;
+          "
+          @click="activeChapter = ''"
+        >
+          <v-icon size="44"> mdi-close-circle-outline </v-icon>
+        </v-btn>
         <v-col>
           <v-col
             style="
@@ -163,7 +176,7 @@
             </div>
             <div
               class="circle white__circle"
-              :style="activeChapter === 'black' ? '' : 'opacity: 0'"
+              :style="'opacity: 0'"
               @click="activeChapter === 'black' ? (activeChapter = '') : null"
             >
               <v-avatar size="290">
@@ -275,7 +288,7 @@ export default {
     },
     activeChapterPositionText() {
       if (this.activeChapter === 'blue') {
-        return 'top: 120px; right: 200px'
+        return 'top: 120px; right: 100px'
       } else if (this.activeChapter === 'red') {
         return 'top: 120px; left: 10px'
       } else if (this.activeChapter === 'green') {
