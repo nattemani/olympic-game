@@ -28,7 +28,7 @@
             </br></br>Au-delà de l’aspect sportif c’est aussi un moyen de faire rayonner culturellement un pays et de montrer sa puissance.
             </br></br>Cependant, pour pouvoir témoigner d’une telle influence encore faut-il pouvoir avoir la capacité financière d’organiser ce « méga évènement ».
             </br></br>En effet, pour pouvoir organiser un tel évènement il convient de prévoir un budget adapté.
-            </br></br>Au regard de l’importance de cet évènement mais aussi des coûts qu’il engendre, la question qui se pose naturellement est de savoir si l’organisation des JO est in fine un gain ou une perte financière pour le pays hôte ?
+            </br></br>Au regard de l’importance de cet évènement mais aussi des coûts qu’il engendre, la question qui se pose naturellement est de savoir si l’organisation des Jeux Olympiques est in fine un gain ou une perte financière pour le pays hôte ?
           </v-card-text>
         </v-card>
       </v-col>
