@@ -294,7 +294,7 @@ export default {
       } else if (this.activeChapter === 'green') {
         return 'top: 120px; left: 10px'
       } else if (this.activeChapter === 'yellow') {
-        return 'top: 70px; right: 10px'
+        return 'top: 70px; right: -10px'
       } else {
         return 'top: 10px; left: 10px'
       }
@@ -311,7 +311,7 @@ export default {
         
         L’état régional annonce en juin 2016: 
         
-        l’état de calamite publique => état peut adopter des mesures exceptionnelles nécessaire à la rationalisation des services publics essentiels pour réaliser les JO. (exemple: le traitement des fonctionnaires)`
+        l’état de calamité publique => état peut adopter des mesures exceptionnelles nécessaires à la rationalisation des services publics essentiels pour réaliser les JO. (exemple: le traitement des fonctionnaires)`
       } else if (this.activeChapter === 'green') {
         return `
         Site officiel du CIO 
@@ -332,7 +332,7 @@ export default {
           
             Le comité international olympique a aidé le comité chargé de l’organisation des jeux olympiques brésilien à hauteur d’environ 1,5 milliards d’euros
           
-            Le gouvernement brésilien a investi dans la construction et la rénovation d’installations sportifs mais aussi dans les moyens transports et les dispositifs de sécurité
+            Le gouvernement brésilien a investi dans la construction et la rénovation d’installations sportives mais aussi dans les moyens de transport et les dispositifs de sécurité
 
             Les sponsors officiels
 

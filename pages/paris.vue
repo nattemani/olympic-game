@@ -293,7 +293,7 @@ export default {
       } else if (this.activeChapter === 'green') {
         return 'top: 120px; left: 10px; font-size: 1.25em;'
       } else if (this.activeChapter === 'yellow') {
-        return 'top: 70px; right: 10px; font-size: 1.25em;'
+        return 'top: 70px; right: -10px; font-size: 1.25em;'
       } else {
         return 'top: -70px; left: 10px; font-size: 1em;'
       }
@@ -317,7 +317,7 @@ export default {
         `
       } else if (this.activeChapter === 'yellow') {
         return `
-          Le budget s’élève désormais à presque 9 milliards d’euros : principalement à cause des mesures de transport et de sécurité 
+          Le budget s’élève désormais à presque 9 milliards d’euros : principalement à cause des mesures de transport et de sécurité.
 
           Il est difficile de se positionner car les Jeux n’ont pas encore débuté.
         `
@@ -327,9 +327,9 @@ export default {
 
           Les principaux contributeurs:
 
-            Le comité international olympique a aidé le comité chargé de l’organisation des jeux olympiques français à hauteur d’environ 1,6 milliards d’euros
+            Le CIO a aidé le comité chargé de l’organisation des jeux olympiques français à hauteur d’environ 1,6 milliards d’euros
 
-            Le gouvernement français a investi dans la construction et la rénovation d’installations sportifs mais aussi dans les moyens transports et les dispositifs de sécurité
+            Le gouvernement français a investi dans la construction et la rénovation d’installations sportives mais aussi dans les moyens de transport et les dispositifs de sécurité
 
             Les sponsors olympiques
 

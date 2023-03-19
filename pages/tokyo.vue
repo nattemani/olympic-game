@@ -294,7 +294,7 @@ export default {
       } else if (this.activeChapter === 'green') {
         return 'top: 120px; left: 10px'
       } else if (this.activeChapter === 'yellow') {
-        return 'top: 70px; right: 10px'
+        return 'top: 70px; right: -10px'
       } else {
         return 'top: -10px; left: 10px'
       }
@@ -306,7 +306,7 @@ export default {
         return `
         La cour des comptes japonaise : le gouvernement japonais aurait minoré 20% des coûts relatifs à l’organisation de l’évènement 
 
-        Le budget a augmenté d’environ 15% exemple :  nouvelles réservations du personnel à cause du report des JO 
+        Le budget a augmenté d’environ 15%. Exemple :  nouvelles réservations du personnel à cause du report des JO 
         `
       } else if (this.activeChapter === 'green') {
         return `
@@ -328,7 +328,7 @@ export default {
 
             Le comité international olympique a aidé le comité chargé de l’organisation des jeux olympiques japonais à hauteur d’environ 1,6 milliards d’euros
 
-            Le gouvernement japonais a investi dans la construction et la rénovation d’installations sportifs mais aussi dans les moyens transports et les dispositifs de sécurité
+            Le gouvernement japonais a investi dans la construction et la rénovation d’installations sportives mais aussi dans les moyens de transport et les dispositifs de sécurité
 
             Les sponsors officiels
 

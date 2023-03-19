@@ -42,22 +42,20 @@
             fait écho à une notion : la malédiction des enchères. C’est-à-dire,
             que dans le dossier de candidature les futurs pays hôtes vont sur
             évaluer les bénéfices. In fine , l’organisation s’avère être dans
-            les cas extrêmes un gouffre financier
+            les cas extrêmes un gouffre financier.
           </br>
           </br>
 
             Ainsi, l’enjeu qui ressort à chaque édition est la maîtrise des
             coûts. C’est pourquoi, des solutions comme la certification des
             comptes des comités ou encore des sanctions disciplinaires en cas de
-            dépassement ont émergés. Ces solutions peuvent être un remède a la
+            dépassement ont émergé. Ces solutions peuvent être un remède à la
             pénurie de candidats que l’on observe depuis quelques années.
             </br>
           </br>
 
-            Les mots de la fin => « J'ai enfreint la règle de Noé : prédire la
-            pluie ne compte pas. Ce qui est important, c'est de construire des
-            arches ».
-        </br>Warren Buffet
+            « J'ai enfreint la règle de Noé : prédire la pluie ne compte pas. Ce qui est important, c'est de construire des arches ».
+        </br></br>Warren Buffet
           </v-card-text>
         </v-card>
       </v-col>
