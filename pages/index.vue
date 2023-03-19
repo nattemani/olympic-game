@@ -24,20 +24,29 @@
             La gouvernance financière et budgétaire des Jeux Olympiques
           </v-card-title>
           <v-card-text class="intro-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            sagittis porta elit a ornare. Praesent suscipit, nibh sed iaculis
-            convallis, nunc nunc eleifend odio, ut pellentesque mauris ipsum non
-            lectus. Suspendisse ac pretium diam. Sed pharetra mi id sapien
-            faucibus imperdiet. Donec imperdiet pharetra mauris at feugiat.
-            Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in
-            nunc accumsan cursus ac aliquam magna. Vestibulum ante ipsum primis
-            in faucibus orci luctus et ultrices posuere cubilia curae; Mauris
-            imperdiet volutpat dolor eget eleifend. Nulla faucibus pellentesque
-            neque sed tincidunt. In id velit at odio consectetur laoreet. Donec
-            a odio ac tellus lobortis elementum. In eget luctus quam. Donec a
-            ultrices lacus. Vestibulum a nisi quis dui ultricies maximus. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit.</v-card-text
-          >
+            Les Jeux Olympiques modernes ont été initiés par le baron Pierre de Coubertin et sont devenus l’un des évènements sportifs les plus emblématiques
+          </br></br>Au-delàs de l’aspect sportif c’est aussi un moyen de faire rayonner culturellement un pays et de montrer sa puissance.
+            </br></br>Cependant, pour pouvoir témoigner d’une telle influence encore faut-il pouvoir avoir la capacité financière d’organiser de « méga évènement ».
+            </br></br>En effet, pour pouvoir organiser un tel évènement il convient de prévoir un budget adapté mais aussi à la hauteur.
+            </br></br>Au regard de l’importance de cet évènement mais aussi des coûts qu’il engendre, la question qui se pose naturellement est de savoir si l’organisation des JO est in fine un gain ou une perte financière pour le pays hôte ?
+          </v-card-text>
+          <!-- <v-list class="intro-text" flat>
+            <v-list-item>
+              Les Jeux Olympiques modernes ont été initiés par le baron Pierre
+              de Coubertin et sont devenus l’un des évènements sportifs les plus
+              emblématiques
+            </v-list-item>
+            <v-list-item>
+              Les Jeux Olympiques modernes ont été initiés par le baron Pierre
+              de Coubertin et sont devenus l’un des évènements sportifs les plus
+              emblématiques
+            </v-list-item>
+            <v-list-item>
+              Les Jeux Olympiques modernes ont été initiés par le baron Pierre
+              de Coubertin et sont devenus l’un des évènements sportifs les plus
+              emblématiques
+            </v-list-item>
+          </v-list> -->
         </v-card>
       </v-col>
       <v-col cols="10" style="display: flex">
@@ -48,8 +57,7 @@
                 <v-col cols="8">
                   <v-card-title style="font-weight: bold"> RIO </v-card-title>
                   <v-card-text>
-                    In eget luctus quam. Donec a ultrices lacus. Vestibulum a
-                    nisi quis dui ultricies maximus.
+                    Les premiers jeux d'Amérique du sud
                   </v-card-text>
                 </v-col>
                 <v-col>
@@ -71,8 +79,7 @@
                 <v-col cols="8">
                   <v-card-title style="font-weight: bold"> TOKYO </v-card-title>
                   <v-card-text>
-                    In eget luctus quam. Donec a ultrices lacus. Vestibulum a
-                    nisi quis dui ultricies maximus.
+                    Les jeux à huit clos
                   </v-card-text>
                 </v-col>
                 <v-col>
@@ -94,8 +101,7 @@
                 <v-col cols="8">
                   <v-card-title style="font-weight: bold"> PARIS </v-card-title>
                   <v-card-text>
-                    In eget luctus quam. Donec a ultrices lacus. Vestibulum a
-                    nisi quis dui ultricies maximus.
+                    Les premiers jeux d'ambition environnementale
                   </v-card-text>
                 </v-col>
                 <v-col>
@@ -131,7 +137,7 @@
         style="display: flex; flex-direction: column; align-items: center"
       >
         <v-card-title> Réalisé par : </v-card-title>
-        <v-card-subtitle> Fatoumagrande, et des gens...</v-card-subtitle>
+        <v-card-subtitle>Fatoumata Drame (M2 FFP)</v-card-subtitle>
       </v-card>
     </v-row>
   </div>
@@ -165,7 +171,7 @@ export default {
 }
 
 .intro-text {
-  width: 80%;
+  width: 82%;
   font-size: 1.25em;
   margin-top: 50px;
 }

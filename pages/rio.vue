@@ -146,6 +146,7 @@
                 color: white;
                 width: 700px;
                 font-size: 1.25em;
+                white-space: pre-line;
               "
               :style="activeChapterPositionText"
             >
@@ -282,33 +283,66 @@ export default {
       } else if (this.activeChapter === 'yellow') {
         return 'top: 70px; right: 10px'
       } else {
-        return 'top: 250px; left: 10px'
+        return 'top: 10px; left: 10px'
       }
     },
     activeChapterText() {
       if (this.activeChapter === 'blue') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+        La ville de Rio de Janeiro a décidé de se porter candidate à l’accueil d’un tel évènement afin de faire rayonner davantage le pays.
+        
+        Mais aussi pour faire suite à l’organisation de la Coupe du Monde de football de 2014 qui s’est déroulée au Brésil.`
       } else if (this.activeChapter === 'red') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+        Marcelo Pedroso, président de l’autorité olympique publique, qui a pour mission de surveiller les dépenses pour les JO de Rio. 
+        
+        L’état régional annonce en juin 2016: 
+        
+        l’état de calamite publique => état peut adopter des mesures exceptionnelles nécessaire à la rationalisation des services publics essentiels pour réaliser les JO. (exemple: le traitement des fonctionnaires)`
       } else if (this.activeChapter === 'green') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+        Site officiel du CIO 
+        
+        Articles de presse 
+        `
       } else if (this.activeChapter === 'yellow') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+        Le budget final s’est élevé à la fin des jeux à plus de 13 milliards d’euros 
+        
+        Perte dû notamment aux éléphants blancs qui sont des infrastructures à l’abandon
+        `
       } else {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+        Le budget initial dans le dossier de candidature était de 9 milliards d’euros
+          
+          Les principaux contributeurs: 
+          
+            Le comité international olympique a aidé le comité chargé de l’organisation des jeux olympiques brésilien à hauteur d’environ 1,5 milliards d’euros
+          
+            Le gouvernement brésilien a investi dans la construction et la rénovation d’installations sportifs mais aussi dans les moyens transports et les dispositifs de sécurité
+
+            Les sponsors officiels
+
+          Les principales dépenses: 
+
+            Les infrastructures sportives: rénovation stade Maracana 
+            
+            La sécurité: la délinquance  
+            
+            Les transports publics pour les touristes et les navettes pour transporter les athlètes sur les sites etc. `
       }
     },
     activeChapterTitle() {
       if (this.activeChapter === 'blue') {
-        return 'TITRE CHAPITRE 1'
+        return 'Chapitre 1 : Le saviez-vous ?'
       } else if (this.activeChapter === 'red') {
-        return 'TITRE CHAPITRE 3'
+        return 'Chapitre 3 : Le contrôle du budget'
       } else if (this.activeChapter === 'green') {
-        return 'TITRE CHAPITRE 5'
+        return 'Chapitre 5 : Principales sources'
       } else if (this.activeChapter === 'yellow') {
-        return 'TITRE CHAPITRE 4'
+        return 'Chapitre 4 : Perte ou gain financier ?'
       } else {
-        return 'TITRE CHAPITRE 2'
+        return 'Chapitre 2 : L’organisation de l’évènement'
       }
     },
     overlayMobile() {

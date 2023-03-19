@@ -4,6 +4,22 @@
       Ce site n'es pas dispo sur mobile,<br />
       Venez nous découvrir sur un ordinateur !
     </v-overlay>
+    <v-btn
+      style="
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 1.05rem;
+        font-weight: bold;
+      "
+      class="back-btn"
+      @click="$router.push('/')"
+    >
+      <v-icon style="padding-right: 5px">
+        mdi-arrow-left-bold-circle-outline
+      </v-icon>
+      ACCUEIL
+    </v-btn>
     <v-row class="banner-intro">
       <v-col
         cols="12"
@@ -22,20 +38,27 @@
         >
           <v-card-title class="intro-title"> CONCLUSION </v-card-title>
           <v-card-text class="intro-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            sagittis porta elit a ornare. Praesent suscipit, nibh sed iaculis
-            convallis, nunc nunc eleifend odio, ut pellentesque mauris ipsum non
-            lectus. Suspendisse ac pretium diam. Sed pharetra mi id sapien
-            faucibus imperdiet. Donec imperdiet pharetra mauris at feugiat.
-            Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in
-            nunc accumsan cursus ac aliquam magna. Vestibulum ante ipsum primis
-            in faucibus orci luctus et ultrices posuere cubilia curae; Mauris
-            imperdiet volutpat dolor eget eleifend. Nulla faucibus pellentesque
-            neque sed tincidunt. In id velit at odio consectetur laoreet. Donec
-            a odio ac tellus lobortis elementum. In eget luctus quam. Donec a
-            ultrices lacus. Vestibulum a nisi quis dui ultricies maximus. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit.</v-card-text
-          >
+            Pour terminer, il est vrai que l’organisation des jeux olympiques
+            fait écho à une notion : la malédiction des enchères. C’est-à-dire,
+            que dans le dossier de candidature les futurs pays hôtes vont sur
+            évaluer les bénéfices. In fine , l’organisation s’avère être dans
+            les cas extrêmes un gouffre financier
+          </br>
+          </br>
+
+            Ainsi, l’enjeu qui ressort à chaque édition est la maîtrise des
+            coûts. C’est pourquoi, des solutions comme la certification des
+            comptes des comités ou encore des sanctions disciplinaires en cas de
+            dépassement ont émergés. Ces solutions peuvent être un remède a la
+            pénurie de candidats que l’on observe depuis quelques années.
+            </br>
+          </br>
+
+            Les mots de la fin => « J'ai enfreint la règle de Noé : prédire la
+            pluie ne compte pas. Ce qui est important, c'est de construire des
+            arches ».
+        </br>Warren Buffet
+          </v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -46,7 +69,7 @@
         style="display: flex; flex-direction: column; align-items: center"
       >
         <v-card-title> Réalisé par : </v-card-title>
-        <v-card-subtitle> Fatoumagrande, et des gens...</v-card-subtitle>
+        <v-card-subtitle>Fatoumata Drame (M2 FFP)</v-card-subtitle>
       </v-card>
     </v-row>
   </div>
@@ -73,6 +96,10 @@ export default {
   color: white !important;
 }
 
+.back-btn {
+  background-color: #c95050 !important;
+  color: white !important;
+}
 .intro-title {
   font-size: 2em;
   margin-top: 50px;
@@ -80,7 +107,7 @@ export default {
 }
 
 .intro-text {
-  width: 80%;
+  width: 82%;
   font-size: 1.25em;
   margin-top: 50px;
 }

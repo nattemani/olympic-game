@@ -146,6 +146,7 @@
                 color: white;
                 width: 700px;
                 font-size: 1.25em;
+                white-space: pre-line;
               "
               :style="activeChapterPositionText"
             >
@@ -282,33 +283,62 @@ export default {
       } else if (this.activeChapter === 'yellow') {
         return 'top: 70px; right: 10px'
       } else {
-        return 'top: 250px; left: 10px'
+        return 'top: -10px; left: 10px'
       }
     },
     activeChapterText() {
       if (this.activeChapter === 'blue') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `La ville de Tokyo a décidé de se porter candidate à l’accueil d’un tel évènement afin de montrer qu’après les catastrophes naturelles de 2011, le pays n’avait pas perdu sa grandeur.`
       } else if (this.activeChapter === 'red') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+        La cour des comptes japonaise : le gouvernement japonais aurait minoré 20% des coûts relatifs à l’organisation de l’évènement 
+
+        Le budget a augmenté d’environ 15% exemple :  nouvelles réservations du personnel à cause du report des JO 
+        `
       } else if (this.activeChapter === 'green') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+          Site officiel du CIO 
+          
+          Articles de presse 
+        `
       } else if (this.activeChapter === 'yellow') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+          Le budget final s’est élevé à la fin des jeux à plus de 15 milliards d’euros : principalement à cause de la pandémie  
+
+          Perte financière : 5/6  infrastructures construites pour l’événement, présentent un déficit annuel d’exploitation. 
+        `
       } else {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+        Le budget initial dans le dossier de candidature était de 10 milliards d’euros
+
+          Les principaux contributeurs:
+
+            Le comité international olympique a aidé le comité chargé de l’organisation des jeux olympiques japonais à hauteur d’environ 1,6 milliards d’euros
+
+            Le gouvernement japonais a investi dans la construction et la rénovation d’installations sportifs mais aussi dans les moyens transports et les dispositifs de sécurité
+
+            Les sponsors officiels
+
+          Les principales dépenses:
+
+            Les infrastructures sportives: nouveau stade olympique japonais à 1,2 milliards d’euros
+
+            Les transports publics pour les touristes et les navettes pour transporter les athlètes sur les sites etc.
+
+            La crise sanitaire de 2019 : report des jeux  et mise en place de mesures sanitaires`
       }
     },
     activeChapterTitle() {
       if (this.activeChapter === 'blue') {
-        return 'TITRE CHAPITRE 1'
+        return 'Chapitre 1 : Le saviez-vous ?'
       } else if (this.activeChapter === 'red') {
-        return 'TITRE CHAPITRE 3'
+        return 'Chapitre 3 : Le contrôle du budget'
       } else if (this.activeChapter === 'green') {
-        return 'TITRE CHAPITRE 5'
+        return 'Chapitre 5 : Principales sources'
       } else if (this.activeChapter === 'yellow') {
-        return 'TITRE CHAPITRE 4'
+        return 'Chapitre 4 : Perte ou gain financier ?'
       } else {
-        return 'TITRE CHAPITRE 2'
+        return 'Chapitre 2 : L’organisation de l’évènement'
       }
     },
     overlayMobile() {

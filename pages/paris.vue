@@ -144,7 +144,7 @@
                 position: absolute;
                 color: white;
                 width: 700px;
-                font-size: 1.25em;
+                white-space: pre-line;
               "
               :style="activeChapterPositionText"
             >
@@ -274,41 +274,74 @@ export default {
     },
     activeChapterPositionText() {
       if (this.activeChapter === 'blue') {
-        return 'top: 120px; right: 200px'
+        return 'top: 120px; right: 200px; font-size: 1.25em;'
       } else if (this.activeChapter === 'red') {
-        return 'top: 120px; left: 10px'
+        return 'top: 120px; left: 10px; font-size: 1.25em;'
       } else if (this.activeChapter === 'green') {
-        return 'top: 120px; left: 10px'
+        return 'top: 120px; left: 10px; font-size: 1.25em;'
       } else if (this.activeChapter === 'yellow') {
-        return 'top: 70px; right: 10px'
+        return 'top: 70px; right: 10px; font-size: 1.25em;'
       } else {
-        return 'top: 250px; left: 10px'
+        return 'top: -70px; left: 10px; font-size: 1em;'
       }
     },
     activeChapterText() {
       if (this.activeChapter === 'blue') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `Les jeux olympiques d’été de Paris 2024, sont les premiers jeux représentant la neutralité carbone`
       } else if (this.activeChapter === 'red') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+        La Cour des comptes française a alerté le COJO en janvier 2023 sur la maitrise des coûts  
+
+        Le budget a augmenté d’environ 15% exemple :  nouvelles réservations du personnel à cause du report des JO 
+        `
       } else if (this.activeChapter === 'green') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+          Site officiel du CIO 
+          
+          Articles de presse 
+          
+          Rapport de la Cour des comptes de mars 2023 relatif à la gouvernance financière et budgétaire des Jeux de Paris 2024 
+        `
       } else if (this.activeChapter === 'yellow') {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+          Le budget s’élève désormais à presque 9 milliards d’euros : principalement à cause des mesures de transport et de sécurité 
+
+          Il est difficile de se positionner car les Jeux n’ont pas encore débuté.
+        `
       } else {
-        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+        return `
+        Le budget initial dans le dossier de candidature était de 6,9 milliards d’euros. Le comité organisationnel français a fait appel à SOLIDEO pour les opérations d’aménagements des jeux.
+
+          Les principaux contributeurs:
+
+            Le comité international olympique a aidé le comité chargé de l’organisation des jeux olympiques français à hauteur d’environ 1,6 milliards d’euros
+
+            Le gouvernement français a investi dans la construction et la rénovation d’installations sportifs mais aussi dans les moyens transports et les dispositifs de sécurité
+
+            Les sponsors olympiques
+
+            97% du financement des JO de Paris viennent de recettes privées
+
+          Les principales dépenses:
+
+            Les infrastructures sportives: la piscine (175 millions d’euros) et le village olympique (1,7 milliards d’euros). ( Les JO de Paris 2024 s’appuient sur 95% des sites existants).
+
+            La sécurité
+
+            Le transport : ligne 17 ralliant en peu de temps le village des médias, le village olympique de l’aéroport Roissy. Le CGD expresse entre Roissy et le centre de paris. Et la ligne 16`
       }
     },
     activeChapterTitle() {
       if (this.activeChapter === 'blue') {
-        return 'TITRE CHAPITRE 1'
+        return 'Chapitre 1 : Le saviez-vous ?'
       } else if (this.activeChapter === 'red') {
-        return 'TITRE CHAPITRE 3'
+        return 'Chapitre 3 : Le contrôle du budget'
       } else if (this.activeChapter === 'green') {
-        return 'TITRE CHAPITRE 5'
+        return 'Chapitre 5 : Principales sources'
       } else if (this.activeChapter === 'yellow') {
-        return 'TITRE CHAPITRE 4'
+        return 'Chapitre 4 : Perte ou gain financier ?'
       } else {
-        return 'TITRE CHAPITRE 2'
+        return 'Chapitre 2 : L’organisation de l’évènement'
       }
     },
     overlayMobile() {
