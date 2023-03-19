@@ -9,7 +9,7 @@
       <v-img
         max-height="300"
         contain
-        :src="require('~/assets/logo-londres.png')"
+        :src="require('~/assets/logo-rio.png')"
       ></v-img>
     </v-row>
     <transition name="fade" mode="out-in">
@@ -117,26 +117,49 @@
               position: relative;
             "
           >
+            <v-card-title
+              style="position: absolute; color: white; font-weight: bold"
+              :style="activeChapterPositionTitle"
+            >
+              {{ activeChapterTitle }}
+            </v-card-title>
+            <v-card-text
+              style="
+                position: absolute;
+                color: white;
+                width: 700px;
+                font-size: 1.25em;
+              "
+              :style="activeChapterPositionText"
+            >
+              {{ activeChapterText }}
+            </v-card-text>
             <div
               class="circle white__circle"
               :style="activeChapter === 'blue' ? '' : 'opacity: 0'"
               @click="activeChapter === 'blue' ? (activeChapter = '') : null"
             >
-              <v-card-title class="white__text">Chapitre 1</v-card-title>
+              <v-avatar size="290">
+                <v-img :src="require(`~/assets/rio/chap1.jpg`)" />
+              </v-avatar>
             </div>
             <div
               class="circle white__circle"
               :style="activeChapter === 'black' ? '' : 'opacity: 0'"
               @click="activeChapter === 'black' ? (activeChapter = '') : null"
             >
-              <v-card-title class="white__text">Chapitre 2</v-card-title>
+              <v-avatar size="290">
+                <v-img :src="require(`~/assets/rio/chap2.jpg`)" />
+              </v-avatar>
             </div>
             <div
               class="circle white__circle"
               :style="activeChapter === 'red' ? '' : 'opacity: 0'"
               @click="activeChapter === 'red' ? (activeChapter = '') : null"
             >
-              <v-card-title class="white__text">Chapitre 3</v-card-title>
+              <v-avatar size="290">
+                <v-img :src="require(`~/assets/rio/chap3.jpg`)" />
+              </v-avatar>
             </div>
           </v-col>
           <v-col
@@ -153,14 +176,18 @@
               :style="activeChapter === 'yellow' ? '' : 'opacity: 0'"
               @click="activeChapter === 'yellow' ? (activeChapter = '') : null"
             >
-              <v-card-title class="white__text">Chapitre 4</v-card-title>
+              <v-avatar size="290">
+                <v-img :src="require(`~/assets/chap4.jpg`)" />
+              </v-avatar>
             </div>
             <div
               class="circle white__circle"
               :style="activeChapter === 'green' ? '' : 'opacity: 0'"
               @click="activeChapter === 'green' ? (activeChapter = '') : null"
             >
-              <v-card-title class="white__text">Chapitre 5</v-card-title>
+              <v-avatar size="290">
+                <v-img :src="require(`~/assets/chap5.jpg`)" />
+              </v-avatar>
             </div>
           </v-col>
         </v-col>
@@ -213,6 +240,58 @@ export default {
         return 'yellow__bg'
       } else {
         return 'black__bg'
+      }
+    },
+    activeChapterPositionTitle() {
+      if (this.activeChapter === 'blue') {
+        return 'top: 10px; right: 150px'
+      } else if (this.activeChapter === 'red') {
+        return 'top: 10px; left: 10px'
+      } else if (this.activeChapter === 'green') {
+        return 'top: 10px; left: 10px'
+      } else if (this.activeChapter === 'yellow') {
+        return 'top: 50px; left: 10px'
+      } else {
+        return 'top: 80px; right: 250px'
+      }
+    },
+    activeChapterPositionText() {
+      if (this.activeChapter === 'blue') {
+        return 'top: 120px; right: 200px'
+      } else if (this.activeChapter === 'red') {
+        return 'top: 120px; left: 10px'
+      } else if (this.activeChapter === 'green') {
+        return 'top: 120px; left: 10px'
+      } else if (this.activeChapter === 'yellow') {
+        return 'top: 70px; right: 10px'
+      } else {
+        return 'top: 250px; left: 10px'
+      }
+    },
+    activeChapterText() {
+      if (this.activeChapter === 'blue') {
+        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+      } else if (this.activeChapter === 'red') {
+        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+      } else if (this.activeChapter === 'green') {
+        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+      } else if (this.activeChapter === 'yellow') {
+        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+      } else {
+        return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis portaelit a ornare. Praesent suscipit, nibh sed iaculis convallis, nunc nunc eleifendodio, ut pellentesque mauris ipsum non lectus. Suspendisse ac pretium diam. Sedpharetra mi id sapien faucibus imperdiet. Donec imperdiet pharetra mauris atfeugiat. Maecenas mollis gravida augue eget suscipit. Maecenas ut justo in nuncaccumsan cursus ac aliquam magna. Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia curae; Mauris imperdiet volutpat dolor egeteleifend. Nulla faucibus pellentesque neque sed tincidunt. In id velit at odioconsectetur laoreet. Donec a odio ac tellus lobortis elementum.'
+      }
+    },
+    activeChapterTitle() {
+      if (this.activeChapter === 'blue') {
+        return 'TITRE CHAPITRE 1'
+      } else if (this.activeChapter === 'red') {
+        return 'TITRE CHAPITRE 3'
+      } else if (this.activeChapter === 'green') {
+        return 'TITRE CHAPITRE 5'
+      } else if (this.activeChapter === 'yellow') {
+        return 'TITRE CHAPITRE 4'
+      } else {
+        return 'TITRE CHAPITRE 2'
       }
     },
     overlayMobile() {
