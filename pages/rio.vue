@@ -294,7 +294,7 @@ export default {
       } else if (this.activeChapter === 'green') {
         return 'top: 120px; left: 10px'
       } else if (this.activeChapter === 'yellow') {
-        return 'top: 70px; right: -10px'
+        return 'top: 70px; right: -50px'
       } else {
         return 'top: 10px; left: 10px'
       }

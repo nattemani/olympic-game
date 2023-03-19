@@ -293,7 +293,7 @@ export default {
       } else if (this.activeChapter === 'green') {
         return 'top: 120px; left: 10px; font-size: 1.25em;'
       } else if (this.activeChapter === 'yellow') {
-        return 'top: 70px; right: -10px; font-size: 1.25em;'
+        return 'top: 70px; right: -50px; font-size: 1.25em;'
       } else {
         return 'top: -70px; left: 10px; font-size: 1em;'
       }
@@ -327,7 +327,7 @@ export default {
 
           Les principaux contributeurs:
 
-            Le CIO a aidé le comité chargé de l’organisation des jeux olympiques français à hauteur d’environ 1,6 milliards d’euros
+            Le CIO a aidé le COJO français à hauteur d’environ 1,6 milliards d’euros
 
             Le gouvernement français a investi dans la construction et la rénovation d’installations sportives mais aussi dans les moyens de transport et les dispositifs de sécurité
 
