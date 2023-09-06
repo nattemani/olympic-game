@@ -305,7 +305,7 @@ export default {
         return `
         La Cour des comptes française a alerté le COJO en janvier 2023 sur la maitrise des coûts  
 
-        Le budget a augmenté d’environ 15% exemple :  nouvelles réservations du personnel à cause du report des JO 
+        Le budget a augmenté d’environ 10% exemple :  nouvelles réservations du personnel à cause du report des JO 
         `
       } else if (this.activeChapter === 'green') {
         return `
