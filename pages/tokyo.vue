@@ -304,7 +304,7 @@ export default {
         return `La ville de Tokyo a décidé de se porter candidate à l’accueil d’un tel évènement afin de montrer qu’après les catastrophes naturelles de 2011, le pays n’avait pas perdu sa grandeur.`
       } else if (this.activeChapter === 'red') {
         return `
-        La cour des comptes japonaise : le gouvernement japonais aurait minoré 20% des coûts relatifs à l’organisation de l’évènement 
+        La cour des comptes japonaise: le gouvernement japonais aurait minoré 20% des coûts relatifs à l’organisation de l’évènement 
 
         Le budget a augmenté d’environ 15%. Exemple :  nouvelles réservations du personnel à cause du report des JO 
         `
